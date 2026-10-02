@@ -4,7 +4,7 @@
 
 QBlocker4arm stops you from accidentally quitting an app when you actually meant to close the window. It works by blocking the default CMD + Q keyboard shortcut and forcing you to hold it down to quit.
 
-This is an Apple Silicon (arm64) port of [Stephen Radford](https://github.com/steve228uk)'s original [QBlocker](https://github.com/steve228uk/QBlocker) — all credit for the idea, design, and original implementation goes to him. Huge thanks for building and open-sourcing it in the first place.
+This is an Apple Silicon (arm64) port of [Stephen Radford](https://github.com/steve228uk)'s original [QBlocker](https://github.com/steve228uk/QBlocker) — all credit for the idea, design, and original implementation goes to him. Huge thanks for building it in the first place.
 
 ## Why this fork exists
 
