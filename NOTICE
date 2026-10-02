@@ -1,0 +1,47 @@
+NOTICE
+======
+
+QBlocker4arm is a reimplementation of the idea behind QBlocker, an application
+originally created by Stephen Radford:
+
+    https://github.com/steve228uk/QBlocker
+
+All credit for the idea, the design and the original implementation belongs to
+Stephen Radford.
+
+
+Relationship to the original
+----------------------------
+
+QBlocker4arm is not a copy of the original source code. It was written against
+modern toolchains because the 2016 codebase — Swift 2, CocoaPods, Intel-only —
+can no longer be compiled with a current version of Xcode. This port:
+
+  * targets Apple Silicon (arm64) and macOS 13 or later;
+  * uses Swift 5 and carries no third-party dependencies;
+  * replaces LSSharedFileList login items with SMAppService;
+  * replaces Realm with a small Codable store, and drops DevMateKit's
+    analytics and auto-update entirely;
+  * replaces the custom tab bar with NSTabViewController;
+  * adds an Input Monitoring permission step and recovers the keyboard event
+    tap when macOS throttles it.
+
+Where the original's class and file organisation were carried across, that is an
+acknowledgement of its structure, not a claim of independent authorship.
+
+
+Licensing
+---------
+
+The original QBlocker repository does not currently carry an open source
+licence. Absent an explicit grant from its copyright holder, no licence can be
+asserted over work derived from it — and no licence may be applied here that is
+more permissive than one the author has not given.
+
+QBlocker4arm therefore ships without a LICENSE file. Permission to redistribute
+this project under a chosen open source licence is being sought from the
+original author. Until that permission is granted, treat this software as all
+rights reserved by its contributors.
+
+QBlocker is a trademark of its respective owner. This project is not affiliated
+with, endorsed by, or sponsored by Stephen Radford.
